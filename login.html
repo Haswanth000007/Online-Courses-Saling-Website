@@ -1,0 +1,99 @@
+<html>
+<head>
+<title> WebSite Assignment | Telugu Web Guru</title>
+<link rel="stylesheet" href="styles.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@700&display=swap" rel="stylesheet">
+
+<script type="text/javascript">
+function check()
+{
+    var uname=document.getElementById("uname").value;
+	var password=document.getElementById("pwd").value;
+	if(uname=="haswanth" && password =="1234")
+	{
+	document.getElementById("form1").action="home.html";
+	}
+	else
+	{
+	document.getElementById("err").innerHTML="username or password is incorrect please provide correct credentials";
+	return false;
+	}
+}
+</script>
+</head>
+<body>
+<div class="topHeader">
+<div class="left">bhaswanthchowdary9999@gmail.com</div>
+<div class="right">instagram id : haswanth_kumar_07</div>
+</div>
+
+<div class="header">
+<div class="row">
+<div class ="hpart1" > <img src="pika.jpg"></div>
+<div class ="hpart2" > Batthena Haswanth Kumar</div>
+<div class ="hpart3" > <a href="login.html" class="login">Login</a></div>
+</div>
+</div>
+
+<div class="menubar">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#aboutus">About</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#success">SuccessMileStones</a></li>
+</ul>
+</div>
+
+<div class="bodypart">
+<h1 class="sectitle">LoginForm</h1><br>
+<form id="form1" name="form1" class="loginform" onsubmit="return check()">
+<h3>UserName:</h3>
+<input type="text" id="uname" name="uname" placeholder="Enter your username"><br><br>
+<h3>Password:</h3>
+<input type="password" id="pwd" name="pwd" placeholder="Enter your password"><br><br>
+<input type="submit" placeholder="Login"><br><br>
+</form>
+
+<div id="err" style="color:red;text-align:center;margin-bottom:100px;font-size:20px;"></div>
+
+<hr>
+<h1 class="sectitle" id="aboutus"> About us</h1>
+<div class="about">
+Hii welcome to our WebSite<br>
+i am haswanth <br>
+if you want to contact please follow below social media<br>
+youtube: MBG Haswanth<br>
+instagram:haswanth_kumar_07<br>
+leetcode : Batthena_haswanth_kumar<br>
+</div>
+
+<div class="footer">
+<div class="part20">
+<h1> Youtube Channel Links</h1>
+<a href="#">C</a><br>
+<a href="#">C++</a><br>
+<a href="#">JAVA</a><br>
+<a href="#">PYTHON</a><br>
+<a href="#">Spring</a><br>
+</div>
+<div class="part20">
+<h1> Social Channel Links</h1>
+<a href="#">Youtube</a><br>
+<a href="#">Instagram</a><br>
+<a href="#">Telegram</a><br>
+<a href="#">Leetcode</a><br>
+</div>
+
+<div class="part40">
+<h1> submit your request</h1>
+<form action="form.jsp" method="POST">
+Email:<br>
+<input type="text" name="userName" placeholder="enter your mail/id" class="footerform"><br><br>
+Request:<br>
+<textarea rows="10" cols="55"></textarea><br><br>
+<input type="submit" placeholder="Submit" class="footerformbtn"><br>
+</form>
+</div>
+</div>
+</body>
+</html>
